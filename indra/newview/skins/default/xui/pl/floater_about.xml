@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<floater name="floater_about" title="O [APP_NAME]">
+	<tab_container name="about_tab">
+		<panel label="Informacje" name="support_panel">
+			<text name="support_intro">
+				Najnowsze informacje o Wavebreaker są dostępne pod adresem
+https://www.wavebreakerviewer.org
+			</text>
+			<button label="Kopiuj do schowka" name="copy_btn"/>
+		</panel>
+		<panel label="Podziękowania" name="credits_panel">
+			<text name="linden_intro">
+				Stworzenie Wavebreakera nie byłoby możliwe bez decyzji Linden Lab o upublicznieniu kodu oryginalnego klienta Second Life.
+Wkład open source od:
+			</text>
+		</panel>
+		<panel label="Wavebreaker" name="fs_credits_panel">
+			<scroll_container name="fs_credits_scroll_container">
+				<panel name="fs_credits_scroll_container_content_panel">
+					<text name="wavebreaker_intro">
+						Wavebreaker jest programistycznym projektem społecznościowym mającym na celu poprawę jakości doświadczeń płynących z używania SecondLife(tm) Viewer. Scalamy wkład różnych programistów udzielających się w społeczności razem z kodem Linden Lab i naszym własnym, aby tworzyć dobrą, bogatą w funkcje przeglądarkę świata nad którą czuwa zespół wsparcia złożony z wolontariuszy. Wavebreaker istnieje dzięki The Wavebreaker Project, Inc., organizacji non-profit.
+
+Zespół programistów Wavebreakera:
+					</text>
+					<text name="fs_contrib_intro">
+						Dodatkowy wkład w rozwój kodu Wavebreakera:
+					</text>
+					<text name="fs_support_intro">
+						Specjalne podziękowania dla naszego zespołu wsparcia, beta testerów, edytorów wiki, nauczycieli i tłumaczy:
+					</text>
+					<text name="fs_art_intro">
+						Wavebreaker zawiera Starlight, zmodyfikowany dla Wavebreakera. Jest on tworzony przez rezydentów dla rezydentów, z intencją dostarczenia alternatywnego, jaśniejszego i w założeniach łatwiejszego w użytkowaniu interfejsu. Więcej szczegółów pod &lt;nolink&gt;https://wiki.secondlife.com/wiki/Viewer_Skins/Starlight&lt;/nolink&gt;.
+
+Artyści i projektanci interfejsu:
+					</text>
+				</panel>
+			</scroll_container>
+		</panel>
+		<panel label="Licencje" name="licenses_panel" />
+	</tab_container>
+</floater>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wavebreaker
+Exec=wavebreaker
+Comment=Client for virtual worlds
+Icon=wavebreaker_icon
+Categories=Development;
+Terminal=true

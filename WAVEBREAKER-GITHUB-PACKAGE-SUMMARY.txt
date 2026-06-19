@@ -1,0 +1,64 @@
+﻿Wavebreaker GitHub Package Summary
+==================================
+
+Source folder:
+G:\firestorm\codex_builds\1\wavebreakerlt
+
+Output folder:
+G:\firestorm\codex_builds\1\Wavebreaker-Github
+
+Started:
+06/19/2026 03:09:37
+
+Finished:
+06/19/2026 03:10:34
+
+Duration:
+00:00:57.0849145
+
+Copied directories:
+656
+
+Copied files:
+28176
+
+Approximate copied size:
+252.23 MB
+
+Excluded directory patterns:
+.git, .vs, .idea, .cache, .pytest_cache, __pycache__, node_modules, build-*, build_*, CMakeFiles, _CPack_Packages, Testing, logs, tmp, temp, ipch, packages, rebranding
+
+Excluded file patterns:
+*.7z, *.aps, *.bak, *.binlog, *.cache, *.dll, *.dmp, *.exe, *.exp, *.iobj, *.ipdb, *.ilk, *.lastbuildstate, *.lib, *.log, *.map, *.obj, *.pdb, *.pch, *.rar, *.sdf, *.suo, *.tmp, *.tlog, *.user, *.zip, CMakeCache.txt, cmake_install.cmake, install_manifest.txt, my_autobuild.xml, wavebreaker-rebrand-report.txt
+
+Build artifact check:
+No obvious build artifacts found in the packaged folder.
+
+How to upload to GitHub
+=======================
+
+1. Open a terminal:
+   cd "G:\firestorm\codex_builds\1\Wavebreaker-Github"
+
+2. Initialize Git in the packaged folder and review what will be published:
+   git init
+   git add .
+   git status
+
+3. Commit locally after reviewing the staged files:
+   git commit -m "Initial Wavebreaker source import"
+
+4. Create a new empty GitHub repository named Wavebreaker.
+   Do not initialize it with a README, .gitignore, or license if this folder already contains those files.
+
+5. Link and push:
+   git branch -M main
+   git remote add origin https://github.com/YOUR_ACCOUNT/Wavebreaker.git
+   git push -u origin main
+
+Notes
+=====
+
+- This script does not copy the original .git history.
+- This script intentionally skips build folders, compiled binaries, logs, archives, CMake output, and local IDE/cache folders.
+- Review licensing, attribution, trademarks, bundled third-party code, and any private credentials before publishing.

@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wavebreaker Splash</title>
+  <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+  <main id="app" class="splash">
+    <button id="settings-button" class="settings-button" type="button" title="Splash Screen Settings" aria-label="Splash Screen Settings"></button>
+
+    <section id="settings-modal" class="settings-modal" aria-label="Splash Screen Settings" hidden>
+      <div class="settings-window">
+        <div class="settings-title">
+          <span>Splash Screen Settings</span>
+          <div class="settings-title-buttons">
+            <button id="settings-minimize" class="settings-minimize" type="button" aria-label="Minimize"></button>
+            <button id="settings-close" class="settings-close" type="button" aria-label="Close"></button>
+          </div>        </div>
+        <div class="settings-body">
+          <p>Configure splash screen display options here. These settings will take effect after the next viewer restart.</p>
+
+          <h3>Section Visibility:</h3>
+          <label><input type="checkbox" data-setting="hidetopbar"> Hide top bar</label>
+          <label><input type="checkbox" data-setting="hideblogs"> Hide blogs section</label>
+          <label><input type="checkbox" data-setting="hidedestinations"> Hide destinations section</label>
+
+          <h3>Accessibility Options:</h3>
+          <label><input type="checkbox" data-setting="usegraymode"> Enable grayscale mode</label>
+          <label><input type="checkbox" data-setting="usehighcontrast"> Enable high contrast mode</label>
+          <label><input type="checkbox" data-setting="useallcaps"> Enable all caps mode</label>
+          <label><input type="checkbox" data-setting="uselargerfonts"> Use larger fonts</label>
+          <label><input type="checkbox" data-setting="notransparency"> Disable transparency effects</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-brand" aria-label="Wavebreaker branding">
+      <img id="hero-logo" src="wavebreaker_logo.png" alt="Wavebreaker logo">
+      <div class="hero-copy">
+        <div id="hero-name" class="hero-name">Wavebreaker</div>
+        <div class="powered">powered by</div>
+        <div class="partners">
+          <span class="kakadu">kakadu<span>software</span></span>
+          <span class="fmod">fmod</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="summary-panels" class="summary"></section>
+
+    <section class="content-grid">
+      <div id="feeds" class="feeds"></div>
+      <aside class="quick-links">
+        <h2>Wiki &amp; JIRA</h2>
+        <div id="wiki-links"></div>
+      </aside>
+    </section>
+
+    <section id="destinations" class="destinations"></section>
+  </main>
+  <script src="splash.js"></script>
+</body>
+</html>
