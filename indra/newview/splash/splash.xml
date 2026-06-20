@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<splash title="Wavebreaker" theme="dark">
+  <branding>
+    <name>Wavebreaker</name>
+    <tagline></tagline>
+    <logo>wavebreaker_logo.png</logo>
+    <smallLogo>wavebreaker_icon.png</smallLogo>
+    <backgroundColor>#202020</backgroundColor>
+    <accentColor>#1f9bd1</accentColor>
+    <textColor>#ffffff</textColor>
+  </branding>
+
+  <links>
+    <wiki label="Wiki" url="https://wiki.wavebreakerviewer.org/" />
+    <jira label="JIRA" url="https://jira.secondlife.com/" />
+    <help label="Help" url="https://wiki.wavebreakerviewer.org/wavebreaker_troubleshooting" />
+  </links>
+
+  <panels>
+    <panel id="latest" title="Latest Version">
+      <line data="latest_version" />
+    </panel>
+    <panel id="version" title="Your Version">
+      <line data="version" />
+      <line data="channel" />
+    </panel>
+    <panel id="wiki" title="Wiki &amp; JIRA">
+      <line>Need Help? Try the Wiki</line>
+      <line>Found a bug? Let us know</line>
+    </panel>
+    <panel id="grid" title="Grid Status">
+      <line data="grid_status" />
+      <line data="grid_in_world" />
+      <line data="sl_time" />
+    </panel>
+    <panel id="status-updates" title="">
+      <line data="status_updates" />
+    </panel>
+  </panels>
+
+  <latestVersion source="https://phoenixviewer.com/app/loginV3/fs-versions.json" branch="display" grid="sl" platform="win" variant="regular" fallback="7.2.4 (80712)" refreshSeconds="3600" />
+
+  <gridStatus source="https://phoenixviewer.com/app/loginV3/secondlife.xml" refreshSeconds="300" fallbackStatus="Online" fallbackInWorld="34,829" />
+  <statusUpdates source="https://status.secondlifegrid.net/history.rss" limit="3" refreshSeconds="600" />
+
+  <feeds>
+    <feed id="wavebreaker-blog" title="Wavebreaker Blog" type="rss" url="https://www.wavebreakerviewer.org/feed/" link="https://www.wavebreakerviewer.org/" limit="3" />
+    <feed id="linden-news" title="Linden News" type="rss" url="https://community.secondlife.com/rss/1-blog-rss.xml" link="https://community.secondlife.com/blogs/" limit="3" />
+    <feed id="blogger-network" title="Blogger Network" type="categories" url="https://community.secondlife.com/rss/9-community-news.xml" link="https://community.secondlife.com/blogs/" limit="3">
+      <category label="Everything" url="https://community.secondlife.com/blogs/" />
+      <category label="Bloggers" url="https://community.secondlife.com/blogs/" />
+      <category label="Videos" url="https://community.secondlife.com/blogs/" />
+      <category label="Fashion" url="https://community.secondlife.com/blogs/" />
+      <category label="Décor" url="https://community.secondlife.com/blogs/" />
+      <category label="Destinations" url="https://community.secondlife.com/blogs/" />
+    </feed>
+  </feeds>
+
+  <destinations title="Destinations" sourceBase="https://phoenixviewer.com/app/loginV3/xml_dest_" sourceSuffix=".json" limit="24">
+    <tab id="new" label="Recent" />
+    <tab id="popular" label="Popular" />
+    <tab id="events" label="Featured" />
+    <tab id="editor" label="Editors' Picks" />
+    <tab id="newbie" label="Newcomer Friendly" />
+  </destinations>
+</splash>

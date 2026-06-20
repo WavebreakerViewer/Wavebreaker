@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Wavebreaker";
+
+CFBundleShortVersionString = "Wavebreaker version %%VERSION%%";
+CFBundleGetInfoString = "Wavebreaker version %%VERSION%%, Copyright 2010-2026 The Wavebreaker Project, Inc.";

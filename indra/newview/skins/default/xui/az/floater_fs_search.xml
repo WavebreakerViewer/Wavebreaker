@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<floater name="floater_fs_search" title="Wavebreaker axtarışı">
+	<floater.string name="string.location">
+		Yer: [LOCATION]
+	</floater.string>
+	<floater.string name="string.traffic">
+		Trafik: [DWELL]
+	</floater.string>
+	<floater.string name="string.area">
+		Sahə: [AREA]
+	</floater.string>
+	<floater.string name="string.members">
+		Adam sayı: [MEMBER_COUNT]
+	</floater.string>
+	<floater.string name="string.founder">
+		Təsisçi: [FOUNDER]
+	</floater.string>
+	<floater.string name="string.age">
+		Yaş: [AGE]
+	</floater.string>
+	<floater.string name="string.listing_price">
+		Qiymət: [LISTING_PRICE]
+	</floater.string>
+	<floater.string name="string.duration">
+		Müddət: [DURATION]
+	</floater.string>
+	<floater.string name="string.covercharge">
+		Giriş haqqı: [COVERCHARGE]
+	</floater.string>
+	<tab_container name="ls_tabs">
+		<panel label="Web" name="panel_ls_web" />
+		<panel label="Adamlar" name="panel_ls_people" />
+		<panel label="Qruplar" name="panel_ls_groups" />
+		<panel label="Yerlər" name="panel_ls_places" />
+		<panel label="Torpaq satışı" name="panel_ls_land" />
+		<panel label="Hadisələr" name="panel_ls_events" />
+		<panel label="Elanlar" name="panel_ls_classifieds" />
+	</tab_container>
+	<panel name="panel_ls_details">
+		<text_editor name="title" value="Ad təyin olunmayıb" />
+		<text_editor name="aux1" value="Əlavə məlumat pəncərəsi 1" />
+		<text_editor name="aux2" value="Əlavə məlumat pəncərəsi 2" />
+		<text_editor name="location" value="Yer haqqında məlumat" />
+		<text_editor name="desc" value="Bu qapının kilidini təxəyyül açarı ilə açırsınız. Ondan kənarda başqa bir ölçü var: səs ölçüsü, görmə ölçüsü, ağıl ölçüsü. Siz həm kölgə, həm də mahiyyət, əşyalar və ideyalar ölkəsinə köçürsünüz; siz indicə Alatoranlıq Zonasına keçdiniz. Görməyə malik olacağınız hər şey gerçəkdir; ekrandakı iştrakçılar aktyor deyil. Onlar əsl vətəndaşlardır ki, iddialarını əsl kiçik iddialar məhkəməsinə verib, iddialarını ora atıb onları burada, bu forumda yerləşdirməyə inandırıblar... Xalq Məhkəməsində."/>
+		<button label="Profil" name="people_profile_btn" />
+		<button label="İM" name="people_message_btn" />
+		<button label="Dostlara" name="people_friend_btn" />
+		<button label="Profil" name="group_profile_btn" />
+		<button label="Söhbət" name="group_message_btn" />
+		<button label="Qoşul" name="group_join_btn" />
+		<button label="Teleport" name="teleport_btn" />
+		<button label="Xəritədə" name="map_btn" />
+		<button label="Yadıma sal" name="event_reminder_btn" />
+	</panel>
+</floater>
